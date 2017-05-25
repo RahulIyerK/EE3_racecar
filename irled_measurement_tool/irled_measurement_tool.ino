@@ -3,8 +3,8 @@
  ******************/
  
 //IR sensors
-#define IR_LEFT 0  //left IR sensor analog input pin
-#define IR_RIGHT 1 //right IR sensor analog input pin
+#define IR_LEFT 1  //left IR sensor analog input pin
+#define IR_RIGHT 0 //right IR sensor analog input pin
 
 /********************
  * Value Definitions*
@@ -17,7 +17,7 @@ int rightIR_Val = 0; //right IR sensor's ADC value
 /////////////////////////////////////////////////////////////
 
 void setup() {
-  Serial.begin(38400);
+  Serial.begin(9600);
   
   pinMode (IR_LEFT, INPUT);
   pinMode (IR_RIGHT, INPUT);
@@ -30,7 +30,9 @@ void loop() {
   //print the data to the serial monitor
   Serial.print (leftIR_Val);
   Serial.print(" ");
-  Serial.println(rightIR_Val);
+  Serial.print(rightIR_Val);
+  Serial.print(" ");
+  Serial.println(rightIR_Val - leftIR_Val);
 
   delay(1); //suggested "delay in between reads for stabilitiy" (Arduino AnalogReadSerial example)
 }
