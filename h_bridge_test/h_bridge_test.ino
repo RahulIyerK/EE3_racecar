@@ -46,7 +46,9 @@ void loop() {
   digitalWrite(RIGHT_MOTOR_PINA, LOW);
   digitalWrite(RIGHT_MOTOR_PINB, HIGH);
   
-  analogWrite(LEFT_MOTOR_PWM, 200);
-  analogWrite(RIGHT_MOTOR_PWM, 112);
+  //analogWrite(LEFT_MOTOR_PWM, 200);
+  //analogWrite(RIGHT_MOTOR_PWM, 112);
+  analogWrite(LEFT_MOTOR_PWM, 100);
+  analogWrite(RIGHT_MOTOR_PWM, 60);
 
 }
