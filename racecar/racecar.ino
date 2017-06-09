@@ -16,7 +16,7 @@
 #define IR_LEFT A1  //left IR sensor analog input pin
 #define IR_RIGHT A0 //right IR sensor analog input pin
 
-//constant to turn
+//constant to turn 1.5
 #define KP 1.5
 
 #define hall 4
@@ -29,11 +29,11 @@
 //#define leftBase 170;
 //#define rightBase 90;
 
-//#define leftBase 100;
-//#define rightBase 60;
-
-  #define leftBase 140;
-  #define rightBase 80;
+#define leftBase 100;
+#define rightBase 60;
+//140
+  //#define leftBase 130;
+  //#define rightBase 80;
 /////////////////////////////////////////////////////////////
 
 void setup() {
